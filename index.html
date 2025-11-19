@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EcoVida - Emprendimiento</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- Encabezado -->
+    <header>
+      <img src="logo.png" alt="Logo EcoVida" class="logo" />
+      <h1>EcoVida</h1>
+      <p class="slogan">Cuidamos el planeta contigo</p>
+    </header>
+
+    <!-- Menú de navegación -->
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="#">Productos</a></li>
+        <li><a href="#">Contáctanos</a></li>
+      </ul>
+    </nav>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main>
+      <!-- VIDEO DE BIENVENIDA -->
+      <section id="video-bienvenida">
+        <h2>Bienvenida</h2>
+        <div class="video-container">
+          <iframe
+            src="https://www.youtube.com/embed/8EKAd31drgA"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          >
+          </iframe>
+        </div>
+      </section>
+
+      <!-- SOBRE NOSOTROS -->
+      <section id="sobre-nosotros">
+        <h2>Sobre nosotros</h2>
+        <p>
+          EcoVida es un emprendimiento dedicado a ofrecer productos ecológicos y
+          sostenibles para la vida diaria. Nuestra misión es reducir el impacto
+          ambiental y fomentar un estilo de vida responsable con el planeta.
+        </p>
+        <img src="img/ecoproductos.jpg" alt="Productos ecológicos" />
+      </section>
+
+      <!-- PRODUCTOS -->
+      <section id="productos">
+        <h2>Nuestros Productos</h2>
+        <table class="tabla-productos">
+          <thead>
+            <tr>
+              <th>Nombre</th>
+              <th>Descripción</th>
+              <th>Precio</th>
+              <th>Disponibilidad</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Botella reutilizable</td>
+              <td>Acero inoxidable, 750ml</td>
+              <td>$45.000</td>
+              <td>Disponible</td>
+            </tr>
+            <tr>
+              <td>Bolsa ecológica</td>
+              <td>Algodón orgánico</td>
+              <td>$20.000</td>
+              <td>Disponible</td>
+            </tr>
+            <tr>
+              <td>Cepillo de bambú</td>
+              <td>Cerdas suaves biodegradables</td>
+              <td>$12.000</td>
+              <td>Agotado</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- CONTACTO -->
+      <section id="contacto">
+        <h2>Contáctanos</h2>
+        <form class="formulario-contacto">
+          <label for="nombre">Nombre completo:</label>
+          <input type="text" id="nombre" name="nombre" required />
+
+          <label for="correo">Correo electrónico:</label>
+          <input type="email" id="correo" name="correo" required />
+
+          <label for="telefono">Teléfono:</label>
+          <input type="tel" id="telefono" name="telefono" required />
+
+          <label for="mensaje">Comentario o mensaje:</label>
+          <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+          <button type="submit" class="btn-enviar">Enviar</button>
+        </form>
+      </section>
+
+      <!-- ASIDE -->
+      <aside>
+        <h3>¿Sabías que...?</h3>
+        <p>
+          Un hogar puede reducir hasta un 30% de sus residuos adoptando
+          productos reutilizables.
+        </p>
+      </aside>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>
+        Contacto: <a href="mailto:ecovida@gmail.com">ecovida@gmail.com</a> |
+        Tel: 312-123-4567
+      </p>
+      <p>&copy; 2025 EcoVida - Todos los derechos reservados</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,168 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f3f7f4;
+}
+
+/* Encabezado */
+header {
+  background: #2e7d32;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+header img {
+  width: 60px;
+  border-radius: 50%;
+}
+
+/* Menú */
+nav {
+  background: #81c784;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #1b5e20;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: white;
+}
+
+/* Contenido principal */
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 20px;
+}
+
+/* Secciones */
+section {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+}
+
+#sobre-nosotros {
+  background-color: #e8f5e9;
+}
+
+#productos {
+  background-color: #f1f8e9;
+}
+
+#contacto {
+  background-color: #f9fbe7;
+}
+
+/* Tabla de productos */
+.tabla-productos {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.tabla-productos th,
+.tabla-productos td {
+  border: 1px solid #a5d6a7;
+  padding: 10px;
+  text-align: center;
+}
+
+.tabla-productos th {
+  background-color: #388e3c;
+  color: white;
+}
+
+.tabla-productos tr:nth-child(even) {
+  background-color: #e8f5e9;
+}
+
+/* Formulario */
+.formulario-contacto {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.formulario-contacto label {
+  font-weight: bold;
+  color: #1b5e20;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+  padding: 8px;
+  border: 1px solid #c8e6c9;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+/* Botón */
+.btn-enviar {
+  background-color: #388e3c;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn-enviar:hover {
+  background-color: #2e7d32;
+}
+
+/* Pie de página */
+footer {
+  background: #2e7d32;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9rem;
+}
+
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 ratio */
+  height: 0;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.video-container iframe {
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+}
